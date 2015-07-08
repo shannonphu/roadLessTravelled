@@ -4,6 +4,9 @@ $section-font: 'Monda';
 $title-color: darkgrey;
 $opaque-white: rgba(255,255,255,0.7);
 $link-font-size: 23px;
+$photoViewer-height: 10em;
+$stateName-font-size: 3vw;
+$photoView-background-color: #D8DBE2;
 
 header {
 	background-color: $header-color;
@@ -53,10 +56,22 @@ header {
 	color: $opaque-white;
 }
 
-.info {
-	height: 15em;
-	//width: 100%;
-	background-color: lightblue;
+.picLayout {
+	.stateName {
+		height: $photoViewer-height;
+		background-color: #A0D5B4;
+		font-size: $stateName-font-size;
+		line-height: $photoViewer-height;
+		text-align: center;
+		font-family: $section-font;
+		border-right: 5px double black;
+	}
+
+	.photoView {
+		height: $photoViewer-height;
+		background-color: $photoView-background-color;
+		font-size: $stateName-font-size;
+	}
 }
 
 

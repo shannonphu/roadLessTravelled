@@ -38,8 +38,17 @@ header {
   text-align: center;
   color: rgba(255, 255, 255, 0.7); }
 
-.info {
-  height: 15em;
-  background-color: lightblue; }
+.picLayout .stateName {
+  height: 10em;
+  background-color: #A0D5B4;
+  font-size: 3vw;
+  line-height: 10em;
+  text-align: center;
+  font-family: "Monda";
+  border-right: 5px double black; }
+.picLayout .photoView {
+  height: 10em;
+  background-color: #D8DBE2;
+  font-size: 3vw; }
 
 /*# sourceMappingURL=roadLessTravelled.css.map */
