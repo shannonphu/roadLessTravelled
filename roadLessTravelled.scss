@@ -4,8 +4,8 @@ $section-font: 'Monda';
 $title-color: darkgrey;
 $opaque-white: rgba(255,255,255,0.8);
 $link-font-size: 23px;
-$photoViewer-height: 10em;
-$stateName-font-size: 28px;
+$photoViewer-height: 8em;
+$stateName-font-size: 30px;
 $photoView-background-color: #D8DBE2;
 
 header {
@@ -42,6 +42,7 @@ header {
       width: 60px;
       padding: 0;
       margin-bottom: 75px;
+      background-color: green;
     }
 }
 
@@ -57,14 +58,18 @@ header {
 }
 
 .picLayout {
+	font-family: $section-font;
+	text-align: center;
+
 	.stateName {
 		height: $photoViewer-height;
 		background-color: #A0D5B4;
 		font-size: $stateName-font-size;
 		line-height: $photoViewer-height;
 		text-align: center;
-		font-family: $section-font;
 		border-right: 5px double black;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
 		min-width: 150px;
 	}
 
@@ -73,10 +78,26 @@ header {
 		background-color: $photoView-background-color;
 		font-size: $stateName-font-size;
 		overflow: hidden;
+		max-width: 700px;
 
 		img {
 			width: 100%;
+			min-width: 600px;
 			height: 100%;
+			opacity: 0.7;
+		}
+
+		.viewMore {
+			font-size: $link-font-size;
+			z-index: 5;
+			position: absolute;
+			background-color: rgba(255,255,255,0.7);
+			width: 100%;
+			visibility: hidden;
+		}
+
+		&:hover .viewMore {
+			visibility: visible;
 		}
 	}
 }

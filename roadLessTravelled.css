@@ -26,7 +26,8 @@ header {
     height: 60px;
     width: 60px;
     padding: 0;
-    margin-bottom: 75px; }
+    margin-bottom: 75px;
+    background-color: green; }
 
 #opening-question {
   font-family: "Righteous";
@@ -38,22 +39,38 @@ header {
   text-align: center;
   color: rgba(255, 255, 255, 0.8); }
 
-.picLayout .stateName {
-  height: 10em;
-  background-color: #A0D5B4;
-  font-size: 28px;
-  line-height: 10em;
-  text-align: center;
+.picLayout {
   font-family: "Monda";
-  border-right: 5px double black;
-  min-width: 150px; }
-.picLayout .photoView {
-  height: 10em;
-  background-color: #D8DBE2;
-  font-size: 28px;
-  overflow: hidden; }
-  .picLayout .photoView img {
-    width: 100%;
-    height: 100%; }
+  text-align: center; }
+  .picLayout .stateName {
+    height: 8em;
+    background-color: #A0D5B4;
+    font-size: 30px;
+    line-height: 8em;
+    text-align: center;
+    border-right: 5px double black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    min-width: 150px; }
+  .picLayout .photoView {
+    height: 8em;
+    background-color: #D8DBE2;
+    font-size: 30px;
+    overflow: hidden;
+    max-width: 700px; }
+    .picLayout .photoView img {
+      width: 100%;
+      min-width: 600px;
+      height: 100%;
+      opacity: 0.7; }
+    .picLayout .photoView .viewMore {
+      font-size: 23px;
+      z-index: 5;
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.7);
+      width: 100%;
+      visibility: hidden; }
+    .picLayout .photoView:hover .viewMore {
+      visibility: visible; }
 
 /*# sourceMappingURL=roadLessTravelled.css.map */
