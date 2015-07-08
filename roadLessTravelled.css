@@ -36,19 +36,24 @@ header {
   z-index: 5;
   width: 100%;
   text-align: center;
-  color: rgba(255, 255, 255, 0.7); }
+  color: rgba(255, 255, 255, 0.8); }
 
 .picLayout .stateName {
   height: 10em;
   background-color: #A0D5B4;
-  font-size: 3vw;
+  font-size: 28px;
   line-height: 10em;
   text-align: center;
   font-family: "Monda";
-  border-right: 5px double black; }
+  border-right: 5px double black;
+  min-width: 150px; }
 .picLayout .photoView {
   height: 10em;
   background-color: #D8DBE2;
-  font-size: 3vw; }
+  font-size: 28px;
+  overflow: hidden; }
+  .picLayout .photoView img {
+    width: 100%;
+    height: 100%; }
 
 /*# sourceMappingURL=roadLessTravelled.css.map */

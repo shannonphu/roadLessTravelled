@@ -13,7 +13,25 @@ $(document).ready(function() {
 			marginLeft: "-=30px"
 		}, 'slow');
 	});
-	console.log("ready");
+	
+	/*var $stateBlock = $('.picLayout .stateName');
+	$stateBlock.mouseover(function() {
+		console.log("stateblock mouse over");
+		$stateBlock.animate({
+			backgroundColor: 'black'
+		});
+	}); */
+
+	/*var $stateBanner = $('.picLayout .photoView img');
+	$stateBanner.mouseover(function() {
+		console.log("moused over");
+		$(this).animate({
+			width: '+=1200px'
+			//height: "+=60px"
+		}, 'slow');
+	});
+*/
+
 });
 
 
