@@ -80,7 +80,12 @@ header {
       -o-transition: all ease-out 0.5s;
       transition: all ease-out 0.5s; }
       .picLayout .photoView:hover img {
-        opacity: 0.5; }
+        opacity: 0.5;
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        filter: grayscale(100%); }
       .picLayout .photoView:hover .viewMore {
         visibility: visible; }
 
