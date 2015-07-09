@@ -39,6 +39,11 @@ header {
   text-align: center;
   color: rgba(255, 255, 255, 0.8); }
 
+.siteInfo .feature {
+  height: 200px;
+  background-color: lightblue;
+  border: 3px solid black; }
+
 .picLayout {
   font-family: "Monda";
   text-align: center; }
@@ -57,7 +62,7 @@ header {
     background-color: #D8DBE2;
     font-size: 30px;
     overflow: hidden;
-    max-width: 700px; }
+    max-width: 800px; }
     .picLayout .photoView img {
       width: 100%;
       min-width: 600px;
