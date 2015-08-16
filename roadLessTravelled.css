@@ -42,7 +42,11 @@ header {
 .siteInfo .feature {
   height: 200px;
   background-color: lightblue;
-  border: 3px solid black; }
+  border: 1px solid black;
+  font-family: "Monda";
+  font-size: 2em;
+  line-height: 200px;
+  text-align: center; }
 
 .picLayout {
   font-family: "Monda";

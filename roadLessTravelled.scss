@@ -9,6 +9,7 @@ $stateName-font-size: 30px;
 $photoView-background-color: #D8DBE2;
 $grayscale: grayscale(100%);
 $no-grayscale: grayscale(0%);
+$feature-height: 200px;
 
 //body { background-color: lightgray; }
 
@@ -63,9 +64,13 @@ header {
 
 .siteInfo {
 	.feature {
-		height: 200px;
+		height: $feature-height;
 		background-color: lightblue;
-		border: 3px solid black;
+		border: 1px solid black;
+		font-family: $section-font;
+		font-size: 2em;
+		line-height: $feature-height;
+		text-align: center;
 	}
 }
 
